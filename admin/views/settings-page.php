@@ -29,14 +29,37 @@ if ( class_exists( 'ReturnDesk_Requests_Store' ) ) {
 }
 ?>
 <div class="gg-header-card">
-	<div class="gg-breadcrumb">
-		<a href="<?php echo esc_url( admin_url( 'admin.php?page=returndesk-settings' ) ); ?>"><?php esc_html_e( 'ReturnDesk', 'windcodex-returndesk' ); ?></a>
-		<span class="gg-breadcrumb-sep">/</span>
-		<span id="gg-breadcrumb-current"><?php esc_html_e( 'General', 'windcodex-returndesk' ); ?></span>
+	<div class="gg-header-card-inner">
+		<div class="gg-breadcrumb">
+			<a href="<?php echo esc_url( admin_url( 'admin.php?page=returndesk-settings' ) ); ?>"><?php esc_html_e( 'ReturnDesk', 'windcodex-returndesk' ); ?></a>
+			<span class="gg-breadcrumb-sep">/</span>
+			<span id="gg-breadcrumb-current"><?php esc_html_e( 'General', 'windcodex-returndesk' ); ?></span>
+		</div>
+		<div class="gg-help-wrap">
+			<button type="button" class="gg-help-btn" id="gg-help-btn" aria-expanded="false" aria-haspopup="true">
+				<span class="dashicons dashicons-editor-help"></span>
+				<?php esc_html_e( 'Help', 'windcodex-returndesk' ); ?>
+			</button>
+			<div class="gg-help-dropdown" id="gg-help-dropdown" hidden>
+				<a href="https://docs.windcodex.com/docs/returndesk" target="_blank" rel="noopener" class="gg-help-item">
+					<span class="gg-help-item-icon dashicons dashicons-media-document"></span>
+					<?php esc_html_e( 'Documentation', 'windcodex-returndesk' ); ?>
+				</a>
+				<a href="https://wordpress.org/support/plugin/windcodex-returndesk/reviews/#new-post" target="_blank" rel="noopener" class="gg-help-item">
+					<span class="gg-help-item-icon dashicons dashicons-star-filled"></span>
+					<?php esc_html_e( 'Submit a Review', 'windcodex-returndesk' ); ?>
+				</a>
+				<a href="https://windcodex.com/product/woocommerce-returns-plugin/" target="_blank" rel="noopener" class="gg-help-item">
+					<span class="gg-help-item-icon dashicons dashicons-awards"></span>
+					<?php esc_html_e( 'Upgrade to Pro', 'windcodex-returndesk' ); ?>
+				</a>
+			</div>
+		</div>
 	</div>
 </div>
 
 <div class="gg-wrap wrap">
+<?php do_action( 'returndesk_before_settings' ); ?>
 <div class="gg-tabs-nav" role="tablist">
 	<button class="gg-tab-btn gg-tab-active" data-tab="general" data-breadcrumb="General"><?php esc_html_e( 'General', 'windcodex-returndesk' ); ?></button>
 	<button class="gg-tab-btn" data-tab="advanced" data-breadcrumb="Advanced"><?php esc_html_e( 'Advanced', 'windcodex-returndesk' ); ?></button>

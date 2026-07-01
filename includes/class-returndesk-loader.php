@@ -37,6 +37,8 @@ class ReturnDesk_Loader {
 		$this->add_action( 'woocommerce_account_returndesk-requests_endpoint', $frontend, 'endpoint_content' );
 		$this->add_action( 'woocommerce_account_returndesk-returns_endpoint', $frontend, 'endpoint_returns_content' );
 
+		$notices = new ReturnDesk_Notices();
+
 		$this->add_action( 'admin_menu', $admin, 'register_menu' );
 		$this->add_action( 'admin_init', $admin, 'register_settings' );
 		$this->add_action( 'admin_enqueue_scripts', $admin, 'enqueue_assets' );
@@ -46,6 +48,11 @@ class ReturnDesk_Loader {
 		$this->add_action( 'wp_ajax_returndesk_send_test_email', $admin, 'ajax_send_test_email' );
 		$this->add_action( 'wp_ajax_returndesk_update_request_status', $admin, 'ajax_update_request_status' );
 		$this->add_action( 'wp_ajax_returndesk_delete_request', $admin, 'ajax_delete_request' );
+		// Notices: Pro upsell + review request (both inline, below header).
+		$this->add_action( 'returndesk_before_settings',             $notices, 'render_pro_notice',    10 );
+		$this->add_action( 'returndesk_before_settings',             $notices, 'render_review_notice', 20 );
+		$this->add_action( 'admin_enqueue_scripts',                  $notices, 'localize_nonce' );
+		$this->add_action( 'wp_ajax_returndesk_dismiss_review',      $notices, 'ajax_dismiss' );
 
 		$this->add_filter( 'plugin_action_links_' . RETURNDESK_PLUGIN_BASE, $admin, 'plugin_action_links' );
 
