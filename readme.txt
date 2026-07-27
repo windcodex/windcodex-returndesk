@@ -1,7 +1,7 @@
 === WindCodex ReturnDesk – WooCommerce Returns, Refunds & RMA Management ===
 Contributors: windcodex
 Tags: woocommerce returns, refund, rma, return management, woocommerce
-Requires at least: 5.8
+Requires at least: 6.9
 Tested up to: 7.0
 Stable tag: 1.0.1
 Requires PHP: 7.4
