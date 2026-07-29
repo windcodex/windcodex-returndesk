@@ -1,987 +1,1279 @@
+# Copyright (C) 2026 WindCodex
+# This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ReturnDesk - Returns for WooCommerce 1.0.0\n"
-"POT-Creation-Date: 2026-03-31 13:35+0000\n"
+"Project-Id-Version: WindCodex ReturnDesk 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/windcodex-returndesk\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-29T06:00:33+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: windcodex-returndesk\n"
 
-#: includes/class-returndesk-frontend.php:1177
-msgid "#%1$s - %2$s"
+#. Plugin Name of the plugin
+#: windcodex-returndesk.php
+msgid "WindCodex ReturnDesk"
 msgstr ""
 
-#: admin/views/settings-page.php:705
-msgid "%d attachment"
-msgid_plural "%d attachments"
-msgstr[0] ""
-msgstr[1] ""
-
-#: admin/views/settings-page.php:80
-msgid "-- Select Page --"
-msgstr ""
-
-#: windcodex-returndesk.php:51
-msgid "<strong>ReturnDesk</strong> requires <a href=\"%s\">WooCommerce</a> to be installed and active."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:60
-msgid "A new {type} request was submitted. Request #{request_id}, Order #{order_id}, Status: {status}."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:150
-msgid "A request already exists for full quantity."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:228
-msgid "A return request already exists for this order."
-msgstr ""
-
-#: admin/views/settings-page.php:611 includes/class-returndesk-frontend.php:1578 includes/class-returndesk-frontend.php:1651
-msgid "Actions"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1289 includes/class-returndesk-frontend.php:1290 includes/class-returndesk-frontend.php:981
-msgid "Add photo / file"
-msgstr ""
-
-#: admin/views/settings-page.php:340 admin/views/settings-page.php:382 admin/views/settings-page.php:424 admin/views/settings-page.php:466 admin/views/settings-page.php:508
-msgid "Additional Content"
-msgstr ""
-
-#: admin/views/settings-page.php:99
-msgid "Address Line 1"
-msgstr ""
-
-#: admin/views/settings-page.php:100
-msgid "Address Line 2"
-msgstr ""
-
-#: admin/views/settings-page.php:95
-msgid "Address shown to customers for return shipments."
-msgstr ""
-
-#: admin/views/settings-page.php:223
-msgid "Admin Notification Email"
-msgstr ""
-
-#: admin/views/settings-page.php:42
-msgid "Advanced"
-msgstr ""
-
-#: admin/views/settings-page.php:594
-msgid "All Statuses"
-msgstr ""
-
-#: admin/views/settings-page.php:163
-msgid "Allow Returns For Sale Products"
-msgstr ""
-
-#: admin/views/settings-page.php:137
-msgid "Allow customer initiated return requests"
-msgstr ""
-
-#: admin/views/settings-page.php:172
-msgid "Allow returns for discounted/sale items"
-msgstr ""
-
-#: admin/views/settings-page.php:58
-msgid "Allowed Order Statuses"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:716 admin/views/settings-page.php:717 admin/views/settings-page.php:719
-msgid "Approve"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:77
-msgid "Approved Return Items"
-msgstr ""
-
-#: admin/views/settings-page.php:609
-msgid "Attachment"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:719
-msgid "Attachment Preview"
-msgstr ""
-
-#: admin/views/settings-page.php:515
-msgid "Available Placeholders"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:721
-msgid "Back"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1333
-msgid "Billing Email"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1333
-msgid "Billing Email (optional)"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1074 includes/class-returndesk-frontend.php:1776
-msgid "Cancel"
-msgstr ""
-
-#: admin/views/settings-page.php:101
-msgid "City"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:720 includes/class-returndesk-frontend.php:928
-msgid "Close"
-msgstr ""
-
-#: admin/views/settings-page.php:51
-msgid "Common Settings"
-msgstr ""
-
-#: admin/views/settings-page.php:15
-msgid "Completed"
-msgstr ""
-
-#: admin/views/settings-page.php:130
-msgid "Configure return-specific behavior for your store."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:481
-msgid "Could not create request. Please try again."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:639 admin/class-returndesk-admin.php:715
-msgid "Could not delete request."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:710
-msgid "Could not save settings."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:365 admin/class-returndesk-admin.php:723
-msgid "Could not send test email."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:713
-msgid "Could not update request status."
-msgstr ""
-
-#: admin/views/settings-page.php:119
-msgid "Country"
-msgstr ""
-
-#: admin/views/settings-page.php:108
-msgid "Country / State"
-msgstr ""
-
-#: admin/views/settings-page.php:199
-msgid "Customer Experience"
-msgstr ""
-
-#: admin/views/settings-page.php:206
-msgid "Customer Success Message"
-msgstr ""
-
-#: admin/views/settings-page.php:200
-msgid "Customer-facing response and communication defaults."
-msgstr ""
-
-#: admin/views/settings-page.php:146
-msgid "Customers can submit returns"
-msgstr ""
-
-#: admin/views/settings-page.php:610
-msgid "Date"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:718 admin/views/settings-page.php:726 admin/views/settings-page.php:728
-msgid "Delete"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:714
-msgid "Delete this request permanently?"
-msgstr ""
-
-#: admin/views/settings-page.php:542
-msgid "Desktop preview"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:51
-msgid "Details:"
-msgstr ""
-
-#: admin/views/settings-page.php:330 admin/views/settings-page.php:372 admin/views/settings-page.php:414 admin/views/settings-page.php:456 admin/views/settings-page.php:498
-msgid "Email Content"
-msgstr ""
-
-#: admin/views/settings-page.php:325 admin/views/settings-page.php:367 admin/views/settings-page.php:409 admin/views/settings-page.php:451 admin/views/settings-page.php:493
-msgid "Email Heading"
-msgstr ""
-
-#: admin/views/settings-page.php:216
-msgid "Email Notifications"
-msgstr ""
-
-#: admin/views/settings-page.php:319 admin/views/settings-page.php:361 admin/views/settings-page.php:403 admin/views/settings-page.php:445 admin/views/settings-page.php:487
-msgid "Email Subject"
-msgstr ""
-
-#: admin/views/settings-page.php:288
-msgid "Email Type"
-msgstr ""
-
-#: admin/views/settings-page.php:571
-msgid "Email preview"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:340
-msgid "Email subject/body cannot be empty."
-msgstr ""
-
-#: admin/views/settings-page.php:305 admin/views/settings-page.php:347 admin/views/settings-page.php:389 admin/views/settings-page.php:431 admin/views/settings-page.php:473
-msgid "Enable"
-msgstr ""
-
-#: admin/views/settings-page.php:136
-msgid "Enable Returns"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:45
-msgid "Ensure all items are securely packed.\n
-Share tracking details after shipment.\n
-Refund is processed after inspection."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:367
-msgid "File is too large. Maximum upload size is %s."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:379 includes/class-returndesk-frontend.php:418
-msgid "File type is not allowed."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1334
-msgid "Find Order"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1328
-msgid "Find your order to create and track return requests."
-msgstr ""
-
-#: admin/views/settings-page.php:35 admin/views/settings-page.php:41
-msgid "General"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1132
-msgid "Go to Orders"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:75
-msgid "Good news! Your request #{request_id} has been approved.\n
-\n
-Next steps:\n
-{return_guidelines}"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1459
-msgid "I agree to the <a href=\"%s\" target=\"_blank\" rel=\"noopener\">Return Policy terms</a>."
-msgstr ""
-
-#: admin/views/settings-page.php:603
-msgid "ID"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:78
-msgid "If you have questions, reply to this email or contact our support team."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:196 admin/class-returndesk-admin.php:224 admin/class-returndesk-admin.php:245 admin/class-returndesk-admin.php:376 admin/class-returndesk-admin.php:619 admin/class-returndesk-admin.php:736
-msgid "Invalid nonce."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:110
-msgid "Invalid order item."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:217
-msgid "Invalid order selected."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:807 includes/class-returndesk-frontend.php:831 includes/class-returndesk-frontend.php:838
-msgid "Invalid request selected."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:388 admin/class-returndesk-admin.php:398 admin/class-returndesk-admin.php:628 admin/class-returndesk-admin.php:634
-msgid "Invalid request."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:392
-msgid "Invalid status."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1865
-msgid "Item #%d"
-msgstr ""
-
-#: admin/views/settings-page.php:587
-msgid "Latest return requests submitted by customers."
-msgstr ""
-
-#: admin/views/settings-page.php:224
-msgid "Leave blank to use site admin email"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1187
-msgid "Load"
-msgstr ""
-
-#: admin/views/settings-page.php:217
-msgid "Manage admin/customer templates and delivery behavior."
-msgstr ""
-
-#: admin/views/settings-page.php:156
-msgid "Maximum days from order date to allow returns"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:725
-msgid "Message"
-msgstr ""
-
-#: admin/views/settings-page.php:545
-msgid "Mobile preview"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1569
-msgid "My Return Requests"
-msgstr ""
-
-#: admin/views/settings-page.php:293
-msgid "New Request (Admin)"
+#. Description of the plugin
+#: windcodex-returndesk.php
+msgid "Add a self-service returns workflow to WooCommerce with eligibility rules, a customer portal, and request management."
 msgstr ""
 
-#: admin/views/settings-page.php:294
-msgid "New Request (Customer)"
+#. Author of the plugin
+#: windcodex-returndesk.php
+msgid "WindCodex"
 msgstr ""
 
-#: includes/class-returndesk-restrictions.php:61
-msgid "New Return Request Received"
+#. Author URI of the plugin
+#: windcodex-returndesk.php
+msgid "https://www.windcodex.com"
 msgstr ""
 
-#: includes/class-returndesk-restrictions.php:59
-msgid "New Return Request for Order #{order_id}"
+#: admin/class-returndesk-admin.php:18
+msgid "ReturnDesk Settings"
 msgstr ""
 
-#: admin/class-returndesk-admin.php:722
-msgid "Next"
+#: admin/class-returndesk-admin.php:19
+#: admin/views/settings-page.php:34
+msgid "ReturnDesk"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:246
-msgid "No items in this order are currently eligible for return."
+#: admin/class-returndesk-admin.php:148
+#: admin/views/settings-page.php:622
+msgid "Return Requests"
 msgstr ""
 
-#: admin/class-returndesk-admin.php:153 admin/views/settings-page.php:616
+#: admin/class-returndesk-admin.php:152
+#: admin/views/settings-page.php:665
 msgid "No requests found."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1557 includes/class-returndesk-frontend.php:1565 includes/class-returndesk-frontend.php:1665 includes/class-returndesk-frontend.php:1673
-msgid "No requests submitted yet."
+#: admin/class-returndesk-admin.php:180
+#: includes/class-returndesk-frontend.php:573
+#: includes/class-returndesk-frontend.php:657
+#: includes/class-returndesk-frontend.php:1868
+msgid "Return"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1267 includes/class-returndesk-frontend.php:1374 includes/class-returndesk-frontend.php:956
-msgid "Not eligible"
+#: admin/class-returndesk-admin.php:194
+#: admin/class-returndesk-admin.php:221
+#: admin/class-returndesk-admin.php:241
+#: admin/class-returndesk-admin.php:371
+#: admin/class-returndesk-admin.php:626
+#: admin/class-returndesk-admin.php:743
+msgid "Invalid nonce."
 msgstr ""
 
-#: admin/views/settings-page.php:16
-msgid "On hold"
+#: admin/class-returndesk-admin.php:198
+#: admin/class-returndesk-admin.php:225
+#: admin/class-returndesk-admin.php:245
+#: admin/class-returndesk-admin.php:375
+#: admin/class-returndesk-admin.php:630
+#: admin/class-returndesk-admin.php:747
+#: admin/class-returndesk-notices.php:102
+msgid "Permission denied."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:253 includes/class-returndesk-frontend.php:457
-msgid "One or more selected items are not eligible."
+#: admin/class-returndesk-admin.php:213
+msgid "Settings saved successfully."
 msgstr ""
 
-#: admin/views/settings-page.php:59
-msgid "Only orders in these statuses can create requests"
+#: admin/class-returndesk-admin.php:233
+msgid "Settings reset to defaults."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:812 includes/class-returndesk-frontend.php:843
-msgid "Only pending requests can be cancelled."
+#: admin/class-returndesk-admin.php:257
+msgid "Please enter a valid email address."
 msgstr ""
 
-#: admin/views/settings-page.php:604 includes/class-returndesk-frontend.php:1574 includes/class-returndesk-frontend.php:1636
-msgid "Order"
+#: admin/class-returndesk-admin.php:333
+msgid "Selected email template is disabled."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1332
-msgid "Order ID"
+#: admin/class-returndesk-admin.php:336
+msgid "Email subject/body cannot be empty."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1677
-msgid "Order Requests"
+#: admin/class-returndesk-admin.php:361
+#: admin/class-returndesk-admin.php:731
+msgid "Could not send test email."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1235
-msgid "Order View"
+#: admin/class-returndesk-admin.php:364
+msgid "Test email sent successfully."
 msgstr ""
 
-#: includes/class-returndesk-restrictions.php:128
-msgid "Order status is not eligible for return."
+#: admin/class-returndesk-admin.php:383
+#: admin/class-returndesk-admin.php:393
+#: admin/class-returndesk-admin.php:635
+#: admin/class-returndesk-admin.php:641
+msgid "Invalid request."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1728 includes/class-returndesk-frontend.php:1730
-msgid "Order:"
+#: admin/class-returndesk-admin.php:387
+msgid "Invalid status."
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1286 includes/class-returndesk-frontend.php:1826
-msgid "Original payment method"
+#: admin/class-returndesk-admin.php:396
+msgid "Only return requests can be managed in free version."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:406
+msgid "Request updated."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:569
+#: admin/class-returndesk-admin.php:996
+#: includes/class-returndesk-frontend.php:886
+msgid "Product"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:570
+#: admin/class-returndesk-admin.php:997
+#: admin/views/settings-page.php:831
+#: includes/class-returndesk-frontend.php:887
+msgid "Price"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:571
+#: admin/views/settings-page.php:830
+msgid "Quantity"
+msgstr ""
+
+#. translators: %s: phone number
+#: admin/class-returndesk-admin.php:599
+#: admin/class-returndesk-admin.php:613
+#: admin/views/settings-page.php:282
+#: admin/views/settings-page.php:311
+#: includes/class-returndesk-frontend.php:1723
+#, php-format
+msgid "Phone: %s"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:646
+#: admin/class-returndesk-admin.php:723
+msgid "Could not delete request."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:651
+msgid "Request deleted."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:716
+msgid "Saving..."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:717
+msgid "Settings saved!"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:718
+msgid "Could not save settings."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:719
+msgid "Reset all settings to default values?"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:720
+msgid "Settings reset."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:721
+msgid "Could not update request status."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:722
+msgid "Delete this request permanently?"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:724
+#: admin/views/settings-page.php:776
+#: admin/views/settings-page.php:778
+msgid "Approve"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:725
+#: admin/views/settings-page.php:780
+#: admin/views/settings-page.php:782
+msgid "Reject"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:726
+#: admin/views/settings-page.php:785
+#: admin/views/settings-page.php:787
+msgid "Delete"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:727
+msgid "Attachment Preview"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:728
+#: includes/class-returndesk-frontend.php:1060
+msgid "Close"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:729
+msgid "Back"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:730
+msgid "Next"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:732
+#: admin/views/settings-page.php:598
+msgid "Subject"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:733
+msgid "Message"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:876
+msgid "This template is currently disabled."
+msgstr ""
+
+#: admin/class-returndesk-admin.php:998
+#: includes/class-returndesk-frontend.php:888
+msgid "Return Quantity"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:1000
+msgid "T-shirt"
+msgstr ""
+
+#: admin/class-returndesk-admin.php:1011
+msgid "Settings"
+msgstr ""
+
+#: admin/class-returndesk-notices.php:37
+msgid "ReturnDesk Pro"
+msgstr ""
+
+#: admin/class-returndesk-notices.php:38
+msgid "— Auto-approvals, exchange requests, store credit, partial returns, WhatsApp notifications, excluded products, and auto-close."
+msgstr ""
+
+#: admin/class-returndesk-notices.php:41
+msgid "Explore ReturnDesk Pro →"
+msgstr ""
+
+#: admin/class-returndesk-notices.php:71
+msgid "⭐ Is ReturnDesk saving you time on returns?"
+msgstr ""
+
+#: admin/class-returndesk-notices.php:74
+msgid "You've been using ReturnDesk for 7 days — we hope it's making your return process smoother and saving you hours of manual work."
+msgstr ""
+
+#: admin/class-returndesk-notices.php:76
+msgid "If it's been helpful, a quick review on WordPress.org takes less than 2 minutes and helps thousands of other store owners find the plugin."
+msgstr ""
+
+#: admin/class-returndesk-notices.php:83
+msgid "⭐ Leave a Review"
+msgstr ""
+
+#: admin/class-returndesk-notices.php:86
+msgid "I already did ✓"
+msgstr ""
+
+#: admin/class-returndesk-notices.php:89
+msgid "Maybe Later"
 msgstr ""
 
 #: admin/views/settings-page.php:13
 msgid "Pending payment"
 msgstr ""
 
-#: admin/class-returndesk-admin.php:200 admin/class-returndesk-admin.php:228 admin/class-returndesk-admin.php:249 admin/class-returndesk-admin.php:380 admin/class-returndesk-admin.php:623 admin/class-returndesk-admin.php:740
-msgid "Permission denied."
-msgstr ""
-
-#: admin/views/settings-page.php:123
-msgid "Phone Number"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:597 admin/class-returndesk-admin.php:608 admin/views/settings-page.php:250 admin/views/settings-page.php:277 includes/class-returndesk-frontend.php:1528
-msgid "Phone: %s"
-msgstr ""
-
-#: admin/views/settings-page.php:289
-msgid "Pick a template to edit and preview"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1484
-msgid "Please accept the return policy terms before submitting request."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1281 includes/class-returndesk-frontend.php:975
-msgid "Please describe your issue*"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:261
-msgid "Please enter a valid email address."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:84
-msgid "Please enter request details."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:64
-msgid "Please enter your reason."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1124
-msgid "Please login to access returns."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1144 includes/class-returndesk-frontend.php:134 includes/class-returndesk-frontend.php:1381
-msgid "Please login to submit a return request."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:71
-msgid "Please select a reason."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:449
-msgid "Please select at least one item."
-msgstr ""
-
-#: admin/views/settings-page.php:122
-msgid "Postcode / ZIP"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:568 admin/class-returndesk-admin.php:904 includes/class-returndesk-frontend.php:757
-msgid "Price"
-msgstr ""
-
 #: admin/views/settings-page.php:14
 msgid "Processing"
 msgstr ""
 
-#: admin/class-returndesk-admin.php:567 admin/class-returndesk-admin.php:903 includes/class-returndesk-frontend.php:756
-msgid "Product"
+#: admin/views/settings-page.php:15
+msgid "Completed"
 msgstr ""
 
-#: admin/views/settings-page.php:606
-msgid "Qty"
+#: admin/views/settings-page.php:16
+msgid "On hold"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1270 includes/class-returndesk-frontend.php:961
-msgid "Qty."
+#: admin/views/settings-page.php:36
+#: admin/views/settings-page.php:64
+msgid "General"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1371 includes/class-returndesk-frontend.php:1880
-msgid "Qty: %d"
+#: admin/views/settings-page.php:41
+msgid "Help"
 msgstr ""
 
-#: admin/class-returndesk-admin.php:569
-msgid "Quantity"
+#: admin/views/settings-page.php:46
+msgid "Documentation"
 msgstr ""
 
-#: admin/views/settings-page.php:608
-msgid "Reason"
+#: admin/views/settings-page.php:50
+msgid "Submit a Review"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:47
-msgid "Reason:"
+#: admin/views/settings-page.php:54
+msgid "Upgrade to Pro"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1285
-msgid "Refund method"
+#: admin/views/settings-page.php:65
+msgid "Advanced"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1831
-msgid "Refund method:"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1807
-msgid "Refund method: Original payment method."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:717 admin/views/settings-page.php:721 admin/views/settings-page.php:723
-msgid "Reject"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1573 includes/class-returndesk-frontend.php:1632
-msgid "Request ID"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1576 includes/class-returndesk-frontend.php:1645
-msgid "Request Type"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:818 includes/class-returndesk-frontend.php:849
-msgid "Request cancelled successfully."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:644
-msgid "Request deleted."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:444 includes/class-returndesk-frontend.php:800
-msgid "Request storage is unavailable."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:289
-msgid "Request submitted successfully."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:408
-msgid "Request updated."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:140
-msgid "Request window expired. Allowed within %d days."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:62
-msgid "Requested Items"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:67 includes/class-returndesk-restrictions.php:72 includes/class-returndesk-restrictions.php:82 includes/class-returndesk-restrictions.php:87
-msgid "Requested Return Items"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:257 includes/class-returndesk-frontend.php:460
-msgid "Requested quantity exceeds available quantity."
-msgstr ""
-
-#: admin/views/settings-page.php:43
+#: admin/views/settings-page.php:66
 msgid "Requests"
 msgstr ""
 
-#: admin/class-returndesk-admin.php:711
-msgid "Reset all settings to default values?"
+#: admin/views/settings-page.php:74
+msgid "Common Settings"
 msgstr ""
 
-#: admin/views/settings-page.php:744
+#: admin/views/settings-page.php:75
+msgid "Shared request rules and order-level eligibility."
+msgstr ""
+
+#: admin/views/settings-page.php:80
+msgid "Toggle Common Settings section"
+msgstr ""
+
+#: admin/views/settings-page.php:88
+msgid "Allowed Order Statuses"
+msgstr ""
+
+#: admin/views/settings-page.php:89
+msgid "Only orders in these statuses can create requests"
+msgstr ""
+
+#: admin/views/settings-page.php:92
+msgid "Select order statuses..."
+msgstr ""
+
+#: admin/views/settings-page.php:102
+msgid "Terms & Conditions Page"
+msgstr ""
+
+#: admin/views/settings-page.php:110
+msgid "-- Select Page --"
+msgstr ""
+
+#: admin/views/settings-page.php:125
+msgid "Return Address"
+msgstr ""
+
+#: admin/views/settings-page.php:126
+msgid "Address shown to customers for return shipments."
+msgstr ""
+
+#: admin/views/settings-page.php:130
+msgid "Address Line 1"
+msgstr ""
+
+#: admin/views/settings-page.php:131
+msgid "Address Line 2"
+msgstr ""
+
+#: admin/views/settings-page.php:132
+msgid "City"
+msgstr ""
+
+#: admin/views/settings-page.php:139
+msgid "Country / State"
+msgstr ""
+
+#: admin/views/settings-page.php:143
+msgid "Select a country / state..."
+msgstr ""
+
+#: admin/views/settings-page.php:149
+msgid "State"
+msgstr ""
+
+#: admin/views/settings-page.php:150
+msgid "Country"
+msgstr ""
+
+#: admin/views/settings-page.php:153
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: admin/views/settings-page.php:154
+msgid "Phone Number"
+msgstr ""
+
+#: admin/views/settings-page.php:160
+msgid "Return Settings"
+msgstr ""
+
+#: admin/views/settings-page.php:161
+msgid "Configure return-specific behavior for your store."
+msgstr ""
+
+#: admin/views/settings-page.php:167
+msgid "Enable Returns"
+msgstr ""
+
+#: admin/views/settings-page.php:168
+msgid "Allow customer initiated return requests"
+msgstr ""
+
+#: admin/views/settings-page.php:177
+msgid "Customers can submit returns"
+msgstr ""
+
+#: admin/views/settings-page.php:178
+msgid "When disabled, return requests are blocked globally."
+msgstr ""
+
+#: admin/views/settings-page.php:186
+msgid "Return Window (days)"
+msgstr ""
+
+#: admin/views/settings-page.php:187
+msgid "Maximum days from order date to allow returns"
+msgstr ""
+
+#: admin/views/settings-page.php:194
+msgid "Allow Returns For Sale Products"
+msgstr ""
+
+#: admin/views/settings-page.php:203
+msgid "Allow returns for discounted/sale items"
+msgstr ""
+
+#: admin/views/settings-page.php:211
+#: includes/class-returndesk-frontend.php:1063
+#: includes/class-returndesk-frontend.php:1426
+msgid "Return Guidelines"
+msgstr ""
+
+#: admin/views/settings-page.php:212
+msgid "HTML allowed. Enter one guideline per line."
+msgstr ""
+
+#: admin/views/settings-page.php:219
+msgid "Return Reasons (one per line)"
+msgstr ""
+
+#: admin/views/settings-page.php:231
+msgid "Customer Experience"
+msgstr ""
+
+#: admin/views/settings-page.php:232
+msgid "Customer-facing response and communication defaults."
+msgstr ""
+
+#: admin/views/settings-page.php:238
+msgid "Customer Success Message"
+msgstr ""
+
+#: admin/views/settings-page.php:239
+msgid "Shown after customer submits a request"
+msgstr ""
+
+#: admin/views/settings-page.php:248
+msgid "Email Notifications"
+msgstr ""
+
+#: admin/views/settings-page.php:249
+msgid "Manage admin/customer templates and delivery behavior."
+msgstr ""
+
+#: admin/views/settings-page.php:255
+msgid "Admin Notification Email"
+msgstr ""
+
+#: admin/views/settings-page.php:256
+msgid "Leave blank to use site admin email"
+msgstr ""
+
+#: admin/views/settings-page.php:324
+msgid "Email Type"
+msgstr ""
+
+#: admin/views/settings-page.php:325
+msgid "Pick a template to edit and preview"
+msgstr ""
+
+#: admin/views/settings-page.php:329
+msgid "New Request (Admin)"
+msgstr ""
+
+#: admin/views/settings-page.php:330
+msgid "New Request (Customer)"
+msgstr ""
+
+#: admin/views/settings-page.php:331
+msgid "Return Approved (Customer)"
+msgstr ""
+
+#: admin/views/settings-page.php:332
+msgid "Return Rejected (Customer)"
+msgstr ""
+
+#: admin/views/settings-page.php:333
+msgid "Return Cancelled (Customer)"
+msgstr ""
+
+#: admin/views/settings-page.php:341
+#: admin/views/settings-page.php:383
+#: admin/views/settings-page.php:425
+#: admin/views/settings-page.php:467
+#: admin/views/settings-page.php:509
+msgid "Enable"
+msgstr ""
+
+#: admin/views/settings-page.php:348
+msgid "Send admin email when a new request is created"
+msgstr ""
+
+#: admin/views/settings-page.php:355
+#: admin/views/settings-page.php:397
+#: admin/views/settings-page.php:439
+#: admin/views/settings-page.php:481
+#: admin/views/settings-page.php:523
+msgid "Email Subject"
+msgstr ""
+
+#: admin/views/settings-page.php:361
+#: admin/views/settings-page.php:403
+#: admin/views/settings-page.php:445
+#: admin/views/settings-page.php:487
+#: admin/views/settings-page.php:529
+msgid "Email Heading"
+msgstr ""
+
+#: admin/views/settings-page.php:366
+#: admin/views/settings-page.php:408
+#: admin/views/settings-page.php:450
+#: admin/views/settings-page.php:492
+#: admin/views/settings-page.php:534
+msgid "Email Content"
+msgstr ""
+
+#: admin/views/settings-page.php:371
+#: admin/views/settings-page.php:413
+#: admin/views/settings-page.php:455
+#: admin/views/settings-page.php:497
+#: admin/views/settings-page.php:539
+msgid "Return Items Title"
+msgstr ""
+
+#: admin/views/settings-page.php:376
+#: admin/views/settings-page.php:418
+#: admin/views/settings-page.php:460
+#: admin/views/settings-page.php:502
+#: admin/views/settings-page.php:544
+msgid "Additional Content"
+msgstr ""
+
+#: admin/views/settings-page.php:390
+msgid "Send customer email after creating request"
+msgstr ""
+
+#: admin/views/settings-page.php:432
+#: admin/views/settings-page.php:474
+#: admin/views/settings-page.php:516
+msgid "Send customer email on status changes"
+msgstr ""
+
+#: admin/views/settings-page.php:551
+msgid "Available Placeholders"
+msgstr ""
+
+#: admin/views/settings-page.php:578
+msgid "Desktop preview"
+msgstr ""
+
+#: admin/views/settings-page.php:581
+msgid "Mobile preview"
+msgstr ""
+
+#: admin/views/settings-page.php:587
+msgid "test@example.com"
+msgstr ""
+
+#: admin/views/settings-page.php:588
+msgid "Send a test email"
+msgstr ""
+
+#: admin/views/settings-page.php:594
+msgid "To"
+msgstr ""
+
+#: admin/views/settings-page.php:607
+msgid "Email preview"
+msgstr ""
+
+#: admin/views/settings-page.php:623
+msgid "Latest return requests submitted by customers."
+msgstr ""
+
+#: admin/views/settings-page.php:628
+msgid "Search by ID, order, reason..."
+msgstr ""
+
+#: admin/views/settings-page.php:630
+msgid "All Statuses"
+msgstr ""
+
+#: admin/views/settings-page.php:639
+msgid "ID"
+msgstr ""
+
+#: admin/views/settings-page.php:640
+#: includes/class-returndesk-frontend.php:1780
+#: includes/class-returndesk-frontend.php:1859
+msgid "Order"
+msgstr ""
+
+#: admin/views/settings-page.php:641
+msgid "Type"
+msgstr ""
+
+#: admin/views/settings-page.php:642
+msgid "Qty"
+msgstr ""
+
+#: admin/views/settings-page.php:643
+#: includes/class-returndesk-frontend.php:1781
+#: includes/class-returndesk-frontend.php:1867
+msgid "Status"
+msgstr ""
+
+#: admin/views/settings-page.php:644
+#: includes/class-returndesk-frontend.php:1619
+msgid "Reason"
+msgstr ""
+
+#: admin/views/settings-page.php:645
+#: admin/views/settings-page.php:846
+msgid "Attachment"
+msgstr ""
+
+#: admin/views/settings-page.php:646
+msgid "Date"
+msgstr ""
+
+#: admin/views/settings-page.php:647
+#: includes/class-returndesk-frontend.php:1784
+#: includes/class-returndesk-frontend.php:1874
+msgid "Actions"
+msgstr ""
+
+#. translators: %d: number of attachments
+#: admin/views/settings-page.php:706
+#, php-format
+msgid "%d attachment"
+msgid_plural "%d attachments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/settings-page.php:743
+msgid "Click to view details"
+msgstr ""
+
+#: admin/views/settings-page.php:761
+#: includes/class-returndesk-frontend.php:1876
+msgid "View"
+msgstr ""
+
+#: admin/views/settings-page.php:797
+msgid "Status:"
+msgstr ""
+
+#: admin/views/settings-page.php:800
+msgid "Returned Items"
+msgstr ""
+
+#. translators: %d: order item id
+#: admin/views/settings-page.php:809
+#: includes/class-returndesk-frontend.php:2112
+#, php-format
+msgid "Item #%d"
+msgstr ""
+
+#: admin/views/settings-page.php:826
+#, php-format
+msgid "Item %d"
+msgstr ""
+
+#: admin/views/settings-page.php:829
+msgid "Product Name"
+msgstr ""
+
+#: admin/views/settings-page.php:836
+msgid "Return Reason:"
+msgstr ""
+
+#: admin/views/settings-page.php:839
+msgid "Return Message:"
+msgstr ""
+
+#: admin/views/settings-page.php:843
+msgid "Attachments:"
+msgstr ""
+
+#: admin/views/settings-page.php:864
+msgid "Save Settings"
+msgstr ""
+
+#: admin/views/settings-page.php:865
 msgid "Reset to Defaults"
 msgstr ""
 
-#: admin/class-returndesk-admin.php:181 includes/class-returndesk-frontend.php:1645 includes/class-returndesk-frontend.php:490 includes/class-returndesk-frontend.php:574
-msgid "Return"
+#: includes/class-returndesk-frontend.php:49
+msgid "Reason:"
 msgstr ""
 
-#: includes/class-returndesk-frontend.php:1037 includes/class-returndesk-frontend.php:1719
+#: includes/class-returndesk-frontend.php:53
+msgid "Details:"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:67
+msgid "Please enter your reason."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:74
+msgid "Please select a reason."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:88
+msgid "Please enter request details."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:159
+#: includes/class-returndesk-frontend.php:164
+#: includes/class-returndesk-frontend.php:1291
+msgid "Returns"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:185
+#: includes/class-returndesk-frontend.php:1306
+#: includes/class-returndesk-frontend.php:1572
+msgid "Please login to submit a return request."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:238
+#: includes/class-returndesk-frontend.php:1422
+#: includes/class-returndesk-frontend.php:1423
+#: includes/class-returndesk-frontend.php:1576
+msgid "Return Order"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:271
+msgid "Invalid order selected."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:282
+msgid "A return request already exists for this order."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:300
+msgid "No items in this order are currently eligible for return."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:307
+#: includes/class-returndesk-frontend.php:540
+msgid "One or more selected items are not eligible."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:311
+#: includes/class-returndesk-frontend.php:543
+msgid "Requested quantity exceeds available quantity."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:343
+msgid "Request submitted successfully."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:412
+#: includes/class-returndesk-frontend.php:443
+#: includes/class-returndesk-frontend.php:465
+#: includes/class-returndesk-frontend.php:482
+msgid "Upload failed. Please try again."
+msgstr ""
+
+#. translators: 1: max file size.
+#: includes/class-returndesk-frontend.php:423
+#, php-format
+msgid "File is too large. Maximum upload size is %s."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:435
+#: includes/class-returndesk-frontend.php:474
+msgid "File type is not allowed."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:527
+#: includes/class-returndesk-frontend.php:931
+msgid "Request storage is unavailable."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:532
+msgid "Please select at least one item."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:564
+msgid "Could not create request. Please try again."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:938
+#: includes/class-returndesk-frontend.php:963
+#: includes/class-returndesk-frontend.php:970
+msgid "Invalid request selected."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:943
+#: includes/class-returndesk-frontend.php:975
+msgid "Only pending requests can be cancelled."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:949
+#: includes/class-returndesk-frontend.php:981
+msgid "Request cancelled successfully."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1057
+#: includes/class-returndesk-restrictions.php:216
+msgid "Return Request"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1059
+msgid "Submit a Return Request"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1071
+#: includes/class-returndesk-frontend.php:1435
+msgid "Return Product"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1088
+msgid "Not eligible"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1093
+#: includes/class-returndesk-frontend.php:1451
+msgid "Qty."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1103
+#: includes/class-returndesk-frontend.php:1458
+msgid "Return reason*"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1107
+#: includes/class-returndesk-frontend.php:1462
+msgid "Please describe your issue*"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1113
+#: includes/class-returndesk-frontend.php:1470
+#: includes/class-returndesk-frontend.php:1471
+msgid "Add photo / file"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1122
+#: includes/class-returndesk-frontend.php:1477
+msgid "Submit Request"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1159
+msgid "Return Request Details"
+msgstr ""
+
+#. translators: 1: requested quantity, 2: created date
+#: includes/class-returndesk-frontend.php:1187
+#: includes/class-returndesk-frontend.php:1959
+#, php-format
 msgid "Return - Qty: %1$d - %2$s"
 msgstr ""
 
-#: admin/views/settings-page.php:94
-msgid "Return Address"
+#: includes/class-returndesk-frontend.php:1214
+#: includes/class-returndesk-frontend.php:1995
+msgid "View attachment"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1228
+#: includes/class-returndesk-frontend.php:2020
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1278
+msgid "Please login to access returns."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1292
+msgid "View and track your return requests. To submit a new request, open an order and click Return."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1293
+msgid "Go to Orders"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1328
+msgid "Start Return"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1329
+msgid "Select an order to submit a return request."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1333
+msgid "Select order"
+msgstr ""
+
+#. translators: 1: order number, 2: date
+#: includes/class-returndesk-frontend.php:1341
+#, php-format
+msgid "#%1$s - %2$s"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1351
+msgid "Load"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1358
+msgid "We could not find an order matching that ID."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1368
+#: includes/class-returndesk-restrictions.php:123
+msgid "Returns are currently disabled."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1422
+msgid "Order View"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1466
+msgid "Refund method"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1467
+#: includes/class-returndesk-frontend.php:2071
+msgid "Original payment method"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1509
+msgid "Return Center"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1510
+msgid "Find your order to create and track return requests."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1514
+msgid "Order ID"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1515
+msgid "Billing Email (optional)"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1515
+msgid "Billing Email"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1516
+msgid "Find Order"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1528
+msgid "We could not find an order matching those details."
+msgstr ""
+
+#. translators: %d: quantity
+#: includes/class-returndesk-frontend.php:1566
+#: includes/class-returndesk-frontend.php:2129
+#, php-format
+msgid "Qty: %d"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1625
+msgid "Select reason"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1629
+msgid "Other"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1632
+msgid "Enter other reason"
+msgstr ""
+
+#. translators: %s: terms page URL
+#: includes/class-returndesk-frontend.php:1653
+#, php-format
+msgid "I agree to the <a href=\"%s\" target=\"_blank\" rel=\"noopener\">Return Policy terms</a>."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1679
+msgid "Please accept the return policy terms before submitting request."
+msgstr ""
+
+#. translators: %s: return address
+#: includes/class-returndesk-frontend.php:1694
+#: includes/class-returndesk-frontend.php:1743
+#, php-format
+msgid "Return shipping address: %s"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1752
+#: includes/class-returndesk-frontend.php:1771
+#: includes/class-returndesk-frontend.php:1888
+#: includes/class-returndesk-frontend.php:1907
+msgid "No requests submitted yet."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1775
+msgid "My Return Requests"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1779
+#: includes/class-returndesk-frontend.php:1855
+msgid "Request ID"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1782
+#: includes/class-returndesk-frontend.php:1868
+msgid "Request Type"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1783
+#: includes/class-returndesk-frontend.php:1870
+msgid "Total"
+msgstr ""
+
+#. translators: %d: item count
+#: includes/class-returndesk-frontend.php:1849
+#, php-format
+msgid "for %d item"
+msgid_plural "for %d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-returndesk-frontend.php:1911
+msgid "Order Requests"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:1972
+#: includes/class-returndesk-frontend.php:1974
+msgid "Order:"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2005
+msgid "View Order"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2037
+msgid "Your return request has been approved. Please proceed with shipping the return item(s) back to us."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2040
+msgid "Your return request is submitted and currently under review. We will notify you once it is processed."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2042
+msgid "Your return request was not approved. Please contact our support team if you need any help."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2044
+msgid "This return request has been cancelled. If needed, you can submit a new return request for this order."
+msgstr ""
+
+#. translators: %s: refund method label
+#: includes/class-returndesk-frontend.php:2052
+#, php-format
+msgid "Refund method: %s."
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2068
+msgid "Store credit"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2076
+msgid "Refund method:"
+msgstr ""
+
+#: includes/class-returndesk-frontend.php:2085
+msgid "Return Product Details"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:42
+msgid "Your return request has been submitted and is being reviewed."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:44
+msgid ""
+"Ensure all items are securely packed.\n"
+"Share tracking details after shipment.\n"
+"Refund is processed after inspection."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:58
+msgid "New Return Request for Order #{order_id}"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:59
+msgid "A new {type} request was submitted. Request #{request_id}, Order #{order_id}, Status: {status}."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:60
+msgid "New Return Request Received"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:61
+msgid "Requested Items"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:62
+msgid "You can manage this request from your admin dashboard."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:63
+msgid "Your Return Request for Order #{order_id}"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:64
+msgid "Your request #{request_id} has been submitted. Current status: {status}."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:65
+msgid "Your Return Request Received!"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:66
+#: includes/class-returndesk-restrictions.php:71
+#: includes/class-returndesk-restrictions.php:81
+#: includes/class-returndesk-restrictions.php:86
+msgid "Requested Return Items"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:67
+#: includes/class-returndesk-restrictions.php:72
+#: includes/class-returndesk-restrictions.php:82
+#: includes/class-returndesk-restrictions.php:87
+msgid "Thank you, {site_title}"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:68
+msgid "Update for Your Request on Order #{order_id}"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:69
+msgid "Your request #{request_id} ({type}) is now {status}."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:70
+msgid "Your Return Request Update"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:73
+msgid "Your Return Request Has Been Approved (Order #{order_id})"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:74
+msgid ""
+"Good news! Your request #{request_id} has been approved.\n"
+"\n"
+"Next steps:\n"
+"{return_guidelines}"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:75
+msgid "Return Request Approved"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:76
+msgid "Approved Return Items"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:77
+msgid "If you have questions, reply to this email or contact our support team."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:78
+msgid "Your Return Request Was Rejected (Order #{order_id})"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:79
+msgid ""
+"Your request #{request_id} could not be approved at this time.\n"
+"\n"
+"If you believe this is a mistake, please contact us with your order details."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:80
+msgid "Return Request Rejected"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:83
+msgid "Your Return Request Was Cancelled (Order #{order_id})"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:84
+msgid "Your request #{request_id} has been cancelled."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:85
+msgid "Return Request Cancelled"
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:109
+msgid "Invalid order item."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:114
+msgid "This item is not eligible for requests."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:119
+msgid "Sale products are not eligible for return."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:127
+msgid "Order status is not eligible for return."
+msgstr ""
+
+#. translators: %d: days
+#: includes/class-returndesk-restrictions.php:139
+#, php-format
+msgid "Request window expired. Allowed within %d days."
+msgstr ""
+
+#: includes/class-returndesk-restrictions.php:149
+msgid "A request already exists for full quantity."
 msgstr ""
 
 #: includes/class-returndesk-restrictions.php:217
 msgid "Return Approved"
 msgstr ""
 
-#: admin/views/settings-page.php:295
-msgid "Return Approved (Customer)"
+#: includes/class-returndesk-restrictions.php:218
+msgid "Return Rejected"
 msgstr ""
 
 #: includes/class-returndesk-restrictions.php:219
 msgid "Return Cancelled"
 msgstr ""
 
-#: admin/views/settings-page.php:297
-msgid "Return Cancelled (Customer)"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1327
-msgid "Return Center"
-msgstr ""
-
-#: admin/views/settings-page.php:180 includes/class-returndesk-frontend.php:1239 includes/class-returndesk-frontend.php:931
-msgid "Return Guidelines"
-msgstr ""
-
-#: admin/views/settings-page.php:189
-msgid "HTML allowed. Enter one guideline per line."
-msgstr ""
-
-#: admin/views/settings-page.php:335 admin/views/settings-page.php:377 admin/views/settings-page.php:419 admin/views/settings-page.php:461 admin/views/settings-page.php:503
-msgid "Return Items Title"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1235 includes/class-returndesk-frontend.php:1236 includes/class-returndesk-frontend.php:1383 includes/class-returndesk-frontend.php:187
-msgid "Return Order"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1248 includes/class-returndesk-frontend.php:939
-msgid "Return Product"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1840
-msgid "Return Product Details"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:905 includes/class-returndesk-frontend.php:758
-msgid "Return Quantity"
-msgstr ""
-
-#: admin/views/settings-page.php:187
-msgid "Return Reasons (one per line)"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:218
-msgid "Return Rejected"
-msgstr ""
-
-#: admin/views/settings-page.php:296
-msgid "Return Rejected (Customer)"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:925 includes/class-returndesk-restrictions.php:216
-msgid "Return Request"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:76
-msgid "Return Request Approved"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:86
-msgid "Return Request Cancelled"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1012
-msgid "Return Request Details"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:81
-msgid "Return Request Rejected"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:149 admin/views/settings-page.php:586
-msgid "Return Requests"
-msgstr ""
-
-#: admin/views/settings-page.php:129
-msgid "Return Settings"
-msgstr ""
-
-#: admin/views/settings-page.php:155
-msgid "Return Window (days)"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1277 includes/class-returndesk-frontend.php:971
-msgid "Return reason*"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1499 includes/class-returndesk-frontend.php:1548
-msgid "Return shipping address: %s"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:20 admin/views/settings-page.php:33
-msgid "ReturnDesk"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:19
-msgid "ReturnDesk Settings"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:109 includes/class-returndesk-frontend.php:1130 includes/class-returndesk-frontend.php:114
-msgid "Returns"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1204 includes/class-returndesk-restrictions.php:124
-msgid "Returns are currently disabled."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:120
-msgid "Sale products are not eligible for return."
-msgstr ""
-
-#: admin/views/settings-page.php:743
-msgid "Save Settings"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:708
-msgid "Saving..."
-msgstr ""
-
-#: admin/views/settings-page.php:592
-msgid "Search by ID, order, reason..."
-msgstr ""
-
-#: admin/views/settings-page.php:112
-msgid "Select a country / state..."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1165
-msgid "Select an order to submit a return request."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1169
-msgid "Select order"
-msgstr ""
-
-#: admin/views/settings-page.php:62
-msgid "Select order statuses..."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:337
-msgid "Selected email template is disabled."
-msgstr ""
-
-#: admin/views/settings-page.php:552
-msgid "Send a test email"
-msgstr ""
-
-#: admin/views/settings-page.php:312
-msgid "Send admin email when a new request is created"
-msgstr ""
-
-#: admin/views/settings-page.php:354
-msgid "Send customer email after creating request"
-msgstr ""
-
-#: admin/views/settings-page.php:396 admin/views/settings-page.php:438 admin/views/settings-page.php:480
-msgid "Send customer email on status changes"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:918
-msgid "Settings"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:236
-msgid "Settings reset to defaults."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:712
-msgid "Settings reset."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:215
-msgid "Settings saved successfully."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:709
-msgid "Settings saved!"
-msgstr ""
-
-#: admin/views/settings-page.php:52
-msgid "Shared request rules and order-level eligibility."
-msgstr ""
-
-#: admin/views/settings-page.php:207
-msgid "Shown after customer submits a request"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1164
-msgid "Start Return"
-msgstr ""
-
-#: admin/views/settings-page.php:118
-msgid "State"
-msgstr ""
-
-#: admin/views/settings-page.php:607 includes/class-returndesk-frontend.php:1575 includes/class-returndesk-frontend.php:1644
-msgid "Status"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1823
-msgid "Store credit"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:724 admin/views/settings-page.php:562
-msgid "Subject"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1296 includes/class-returndesk-frontend.php:990
-msgid "Submit Request"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:927
-msgid "Submit a Return Request"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:907
-msgid "T-shirt"
-msgstr ""
-
-#: admin/views/settings-page.php:72
-msgid "Terms & Conditions Page"
-msgstr ""
-
-#: admin/class-returndesk-admin.php:368
-msgid "Test email sent successfully."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:68 includes/class-returndesk-restrictions.php:73 includes/class-returndesk-restrictions.php:83 includes/class-returndesk-restrictions.php:88
-msgid "Thank you, {site_title}"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:115
-msgid "This item is not eligible for requests."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1799
-msgid "This return request has been cancelled. If needed, you can submit a new return request for this order."
-msgstr ""
-
-#: admin/class-returndesk-admin.php:862
-msgid "This template is currently disabled."
-msgstr ""
-
-#: admin/views/settings-page.php:558
-msgid "To"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1577 includes/class-returndesk-frontend.php:1647
-msgid "Total"
-msgstr ""
-
-#: admin/views/settings-page.php:605
-msgid "Type"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:69
-msgid "Update for Your Request on Order #{order_id}"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:356 includes/class-returndesk-frontend.php:387 includes/class-returndesk-frontend.php:409 includes/class-returndesk-frontend.php:426
-msgid "Upload failed. Please try again."
-msgstr ""
-
-#: admin/views/settings-page.php:702 includes/class-returndesk-frontend.php:1653
-msgid "View"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1761
-msgid "View Order"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1131
-msgid "View and track your return requests. To submit a new request, open an order and click Return."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1060 includes/class-returndesk-frontend.php:1751
-msgid "View attachment"
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1194
-msgid "We could not find an order matching that ID."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1346
-msgid "We could not find an order matching those details."
-msgstr ""
-
-#: admin/views/settings-page.php:147
-msgid "When disabled, return requests are blocked globally."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:63
-msgid "You can manage this request from your admin dashboard."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:74
-msgid "Your Return Request Has Been Approved (Order #{order_id})"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:66
-msgid "Your Return Request Received!"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:71
-msgid "Your Return Request Update"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:84
-msgid "Your Return Request Was Cancelled (Order #{order_id})"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:79
-msgid "Your Return Request Was Rejected (Order #{order_id})"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:64
-msgid "Your Return Request for Order #{order_id}"
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:70
-msgid "Your request #{request_id} ({type}) is now {status}."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:80
-msgid "Your request #{request_id} could not be approved at this time.\n
-\n
-If you believe this is a mistake, please contact us with your order details."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:85
-msgid "Your request #{request_id} has been cancelled."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:65
-msgid "Your request #{request_id} has been submitted. Current status: {status}."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1792
-msgid "Your return request has been approved. Please proceed with shipping the return item(s) back to us."
-msgstr ""
-
-#: includes/class-returndesk-restrictions.php:43
-msgid "Your return request has been submitted and is being reviewed."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1795
-msgid "Your return request is submitted and currently under review. We will notify you once it is processed."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1797
-msgid "Your return request was not approved. Please contact our support team if you need any help."
-msgstr ""
-
-#: includes/class-returndesk-frontend.php:1626
-msgid "for %d item"
-msgid_plural "for %d items"
-msgstr[0] ""
-msgstr[1] ""
-
-#: admin/views/settings-page.php:551
-msgid "test@example.com"
+#. translators: %s: WooCommerce plugin URL
+#: windcodex-returndesk.php:49
+#, php-format
+msgid "<strong>ReturnDesk</strong> requires <a href=\"%s\">WooCommerce</a> to be installed and active."
+msgstr ""
+
+#. translators: %s: ReturnDesk Pro plugin URL
+#: windcodex-returndesk.php:73
+msgid "<strong>WindCodex ReturnDesk</strong> cannot be activated while <strong>ReturnDesk Pro</strong> is active."
 msgstr ""
