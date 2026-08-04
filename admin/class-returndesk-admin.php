@@ -54,7 +54,7 @@ class ReturnDesk_Admin {
 		$clean['return_window_days']    = max( 1, absint( $input['return_window_days'] ?? $defaults['return_window_days'] ) );
 		$clean['return_allow_sale_products'] = ( ( $input['return_allow_sale_products'] ?? 'no' ) === 'yes' ) ? 'yes' : 'no';
 		$clean['customer_message']      = sanitize_text_field( $input['customer_message'] ?? $defaults['customer_message'] );
-		$clean['return_guidelines']     = wp_kses_post( wp_unslash( (string) ( $input['return_guidelines'] ?? $defaults['return_guidelines'] ) ) );
+		$clean['return_guidelines']     = wp_kses_post( (string) ( $input['return_guidelines'] ?? $defaults['return_guidelines'] ) );
 		$clean['return_reasons']        = sanitize_textarea_field( $input['return_reasons'] ?? $defaults['return_reasons'] );
 		$clean['terms_page_id']         = absint( $input['terms_page_id'] ?? $defaults['terms_page_id'] );
 		$clean['return_store_address_1'] = sanitize_text_field( $input['return_store_address_1'] ?? $defaults['return_store_address_1'] );
@@ -189,6 +189,19 @@ class ReturnDesk_Admin {
 		echo '</tbody></table></div>';
 	}
 
+	private function get_post_settings_payload(): array {
+		if ( ! isset( $_POST['settings'] ) || ! is_array( $_POST['settings'] ) ) {
+			return array();
+		}
+		$raw_settings = wp_unslash( $_POST['settings'] );
+		$html_fields  = array( 'return_guidelines' );
+		$input        = array();
+		foreach ( $raw_settings as $key => $value ) {
+			$input[ $key ] = in_array( $key, $html_fields, true ) ? $value : map_deep( $value, 'sanitize_textarea_field' );
+		}
+		return $input;
+	}
+
 	public function ajax_save_settings(): void {
 		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'returndesk_save_settings' ) ) {
 			wp_send_json_error( array( 'message' => __( 'Invalid nonce.', 'windcodex-returndesk' ) ), 403 );
@@ -198,9 +211,7 @@ class ReturnDesk_Admin {
 			wp_send_json_error( array( 'message' => __( 'Permission denied.', 'windcodex-returndesk' ) ), 403 );
 		}
 
-		$input = isset( $_POST['settings'] ) && is_array( $_POST['settings'] )
-			? map_deep( wp_unslash( $_POST['settings'] ), 'sanitize_textarea_field' )
-			: array();
+		$input = $this->get_post_settings_payload();
 
 		$existing     = (array) get_option( self::SETTINGS_OPTION, ReturnDesk_Restrictions::get_default_settings() );
 		$clean    = $this->sanitize_settings( array_merge( $existing, $input ) );
@@ -248,7 +259,7 @@ class ReturnDesk_Admin {
 		$target_email = isset( $_POST['target_email'] ) ? sanitize_email( wp_unslash( $_POST['target_email'] ) ) : '';
 		$template     = isset( $_POST['template'] ) ? sanitize_key( wp_unslash( $_POST['template'] ) ) : 'status_approved';
 		$input        = isset( $_POST['settings'] ) && is_array( $_POST['settings'] )
-			? map_deep( wp_unslash( $_POST['settings'] ), 'sanitize_textarea_field' )
+			? $this->get_post_settings_payload()
 			: (array) get_option( self::SETTINGS_OPTION, ReturnDesk_Restrictions::get_default_settings() );
 		$existing     = (array) get_option( self::SETTINGS_OPTION, ReturnDesk_Restrictions::get_default_settings() );
 		$settings     = $this->sanitize_settings( array_merge( $existing, $input ) );
@@ -751,7 +762,7 @@ class ReturnDesk_Admin {
 
 		$template = isset( $_POST['template'] ) ? sanitize_key( wp_unslash( $_POST['template'] ) ) : 'new_request_customer';
 		$input    = isset( $_POST['settings'] ) && is_array( $_POST['settings'] )
-			? map_deep( wp_unslash( $_POST['settings'] ), 'sanitize_textarea_field' )
+			? $this->get_post_settings_payload()
 			: (array) get_option( self::SETTINGS_OPTION, ReturnDesk_Restrictions::get_default_settings() );
 		$existing = (array) get_option( self::SETTINGS_OPTION, ReturnDesk_Restrictions::get_default_settings() );
 		$settings = $this->sanitize_settings( array_merge( $existing, $input ) );

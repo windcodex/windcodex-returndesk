@@ -3,7 +3,7 @@ Contributors: windcodex
 Tags: woocommerce returns, refund, rma, return management, woocommerce
 Requires at least: 6.9
 Tested up to: 7.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 7.4
 WC requires at least: 7.0
 WC tested up to: 10.6
@@ -198,6 +198,10 @@ Yes. ReturnDesk is compatible with WooCommerce High-Performance Order Storage (H
 4. **Customer return request form** – Return button and request form in the My Account order view.
 
 == Changelog ==
+
+= 1.0.3 =
+* Changed: Return Guidelines is now a rich text editor instead of a plain textarea, and content is displayed as formatted HTML (paragraphs, lists, links, bold, etc.) instead of being forced into a bulleted list.
+* Fixed: Return Guidelines with HTML formatting (bold, links, etc.) were rendered as escaped text instead of formatted HTML in the customer's "approved" return status notice.
 
 = 1.0.2 =
 * Added: Loads plugin translations via `load_plugin_textdomain()` for full compatibility with translation plugins (Loco Translate, WPML String Translation) and manually installed language packs.

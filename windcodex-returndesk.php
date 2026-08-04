@@ -4,7 +4,7 @@
  * Plugin Name:       WindCodex ReturnDesk
  * Tagline:           Returns for WooCommerce
  * Description:       Add a self-service returns workflow to WooCommerce with eligibility rules, a customer portal, and request management.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            WindCodex
  * Author URI:        https://www.windcodex.com
  * License:           GPL v2 or later
@@ -22,7 +22,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'RETURNDESK_VERSION',     '1.0.2' );
+define( 'RETURNDESK_VERSION',     '1.0.3' );
 define( 'RETURNDESK_PLUGIN_FILE', __FILE__ );
 define( 'RETURNDESK_PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 define( 'RETURNDESK_PLUGIN_URL',  plugin_dir_url( __FILE__ ) );

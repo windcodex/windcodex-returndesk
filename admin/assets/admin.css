@@ -332,6 +332,96 @@
 .gg-meta-box .gg-textarea {
 	max-width: 40rem;
 }
+.gg-row-body .wp-editor-wrap {
+	max-width: 40rem;
+}
+.gg-row-body .wp-editor-wrap .mce-tinymce,
+.gg-row-body .wp-editor-wrap table.mce-tinymce,
+.gg-row-body .wp-editor-wrap .mce-tinymce iframe {
+	max-width: 40rem !important;
+	width: 100% !important;
+}
+
+/* Brand styling for the rich text (wp_editor) fields */
+.gg-row-body .wp-editor-wrap {
+	/* border: 1.5px solid var(--gg-border); */
+	/* border-radius: var(--gg-radius-sm); */
+	/* overflow: hidden; */
+	/* background: #fff; */
+	/* transition: border-color .15s ease, box-shadow .15s ease; */
+}
+.gg-row-body .wp-editor-tools {
+	/* background: #fff; */
+	padding: 6px 6px 0;
+}
+.gg-row-body .wp-editor-tabs {
+	margin: 0;
+}
+.gg-row-body .wp-switch-editor {
+	border: 1px solid var(--gg-border);
+	border-bottom: none;
+	border-radius: var(--gg-radius-sm) var(--gg-radius-sm) 0 0;
+	background: #fff;
+	color: var(--gg-accent);
+	font-size: 12px;
+	font-weight: 600;
+	padding: 6px 12px;
+	box-shadow: none;
+}
+.gg-row-body .tmce-active .wp-switch-editor.switch-tmce,
+.gg-row-body .html-active .wp-switch-editor.switch-html {
+	background: var(--gg-accent-light);
+	color: var(--gg-accent);
+}
+.gg-row-body .wp-editor-container {
+	border: 1px solid var(--gg-border);
+	border-radius: 6px;
+}
+.gg-row-body .mce-toolbar-grp,
+.gg-row-body .quicktags-toolbar {
+	background: var(--gg-accent-light) !important;
+	border-bottom: 1px solid var(--gg-border) !important;
+}
+.gg-row-body .mce-btn.mce-active button,
+.gg-row-body .mce-btn:hover button {
+	background: #fff;
+}
+.gg-row-body .mce-btn.mce-active,
+.gg-row-body .mce-btn:hover {
+	border-color: var(--gg-accent-mid) !important;
+}
+.gg-row-body .quicktags-toolbar input.button.button-small {
+	border: 1px solid var(--gg-border);
+	border-radius: var(--gg-radius-sm);
+	background: #fff;
+	color: var(--gg-text-2);
+	font-size: 12px;
+	box-shadow: none;
+}
+.gg-row-body .quicktags-toolbar input.button.button-small:hover {
+	background: var(--gg-accent-mid);
+	border-color: var(--gg-accent);
+	color: var(--gg-accent);
+}
+.gg-row-body .wp-editor-area {
+	border: none;
+	font-family: inherit;
+	font-size: 13px;
+	color: var(--gg-text);
+	padding: 12px 13px;
+}
+.gg-row-body .mce-edit-area {
+	border: none !important;
+}
+.gg-row-body .mce-statusbar {
+	background: #fff !important;
+	border-top: 1px solid var(--gg-border) !important;
+}
+.gg-row-body .mce-path-item {
+	color: var(--gg-text-3) !important;
+	font-size: 11px !important;
+}
+
 .gg-field-hint { font-size: 12px; color: var(--gg-text-3); margin-top: 7px; line-height: 1.6; }
 
 /* Email customizer layout */

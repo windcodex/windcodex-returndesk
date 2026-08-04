@@ -209,9 +209,23 @@ if ( class_exists( 'ReturnDesk_Requests_Store' ) ) {
 				<div class="gg-form-row">
 					<div class="gg-row-label">
 						<div class="gg-row-title"><?php esc_html_e( 'Return Guidelines', 'windcodex-returndesk' ); ?></div>
-						<div class="gg-row-hint"><?php esc_html_e( 'HTML allowed. Enter one guideline per line.', 'windcodex-returndesk' ); ?></div>
+						<div class="gg-row-hint"><?php esc_html_e( 'Shown to customers when they submit or view an approved return.', 'windcodex-returndesk' ); ?></div>
 					</div>
-					<div class="gg-row-body"><textarea class="gg-input" rows="4" name="returndesk_settings[return_guidelines]"><?php echo esc_textarea( $settings['return_guidelines'] ?? '' ); ?></textarea></div>
+					<div class="gg-row-body">
+						<?php
+						wp_editor(
+							(string) ( $settings['return_guidelines'] ?? '' ),
+							'returndesk_return_guidelines',
+							array(
+								'textarea_name' => 'returndesk_settings[return_guidelines]',
+								'textarea_rows' => 6,
+								'media_buttons' => false,
+								'teeny'         => true,
+								'quicktags'     => true,
+							)
+						);
+						?>
+					</div>
 				</div>
 
 				<div class="gg-form-row gg-form-row-last">

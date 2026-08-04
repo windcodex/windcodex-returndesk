@@ -366,6 +366,9 @@
 	initMultiSelects($('.gg-tab-panel-active'));
 
 	function collectSettings() {
+		if (window.tinymce) {
+			tinymce.triggerSave();
+		}
 		var data = {};
 		var arr = $form.serializeArray();
 		$.each(arr, function (_, field) {

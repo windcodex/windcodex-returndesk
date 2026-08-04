@@ -1047,7 +1047,7 @@ private function create_request_from_order_items( WC_Order $order, array $items,
 	private function render_order_view_modal( WC_Order $order ): void {
 		$settings = $this->restrictions->get_settings();
 		$return_reasons    = $this->parse_multiline_options( (string) ( $settings['return_reasons'] ?? '' ) );
-		$return_guidelines = $this->parse_multiline_options( (string) ( $settings['return_guidelines'] ?? '' ), true );
+		$return_guidelines = (string) ( $settings['return_guidelines'] ?? '' );
 		$terms_page_id     = absint( $settings['terms_page_id'] ?? 0 );
 		$order_id          = absint( $order->get_id() );
 		$modal_id          = 'returndesk-modal-order-' . $order_id;
@@ -1394,7 +1394,7 @@ private function create_request_from_order_items( WC_Order $order, array $items,
 	private function render_bulk_return_form_for_order( WC_Order $order, string $return_to ): void {
 		$settings          = $this->restrictions->get_settings();
 		$return_reasons    = $this->parse_multiline_options( (string) ( $settings['return_reasons'] ?? '' ) );
-		$return_guidelines = $this->parse_multiline_options( (string) ( $settings['return_guidelines'] ?? '' ), true );
+		$return_guidelines = (string) ( $settings['return_guidelines'] ?? '' );
 		$terms_page_id     = absint( $settings['terms_page_id'] ?? 0 );
 		$eligible_rows     = array();
 
@@ -1580,7 +1580,7 @@ private function create_request_from_order_items( WC_Order $order, array $items,
 		<?php
 	}
 
-	private function parse_multiline_options( string $raw, bool $allow_html = false ): array {
+	private function parse_multiline_options( string $raw ): array {
 		$lines = preg_split( '/\r\n|\r|\n/', $raw );
 		if ( ! is_array( $lines ) ) {
 			return array();
@@ -1588,8 +1588,8 @@ private function create_request_from_order_items( WC_Order $order, array $items,
 
 		$clean = array();
 		foreach ( $lines as $line ) {
-			$value = $allow_html ? wp_kses_post( trim( (string) $line ) ) : trim( wp_strip_all_tags( (string) $line ) );
-			if ( '' !== trim( wp_strip_all_tags( (string) $value ) ) ) {
+			$value = trim( wp_strip_all_tags( (string) $line ) );
+			if ( '' !== $value ) {
 				$clean[] = $value;
 			}
 		}
@@ -1597,18 +1597,16 @@ private function create_request_from_order_items( WC_Order $order, array $items,
 		return array_values( array_unique( $clean ) );
 	}
 
-	private function render_guidelines_notice( string $title, array $guidelines ): void {
-		if ( empty( $guidelines ) ) {
+	private function render_guidelines_notice( string $title, string $guidelines ): void {
+		if ( '' === trim( wp_strip_all_tags( $guidelines ) ) ) {
 			return;
 		}
 		?>
 		<div class="returndesk-note returndesk-note-muted">
 			<strong><?php echo esc_html( $title ); ?></strong>
-			<ul class="returndesk-note-list">
-				<?php foreach ( $guidelines as $line ) : ?>
-					<li><?php echo wp_kses_post( $line ); ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="returndesk-note-content">
+				<?php echo wp_kses_post( wpautop( $guidelines ) ); ?>
+			</div>
 		</div>
 		<?php
 	}
@@ -2030,12 +2028,12 @@ private function create_request_from_order_items( WC_Order $order, array $items,
 	private function render_request_status_notice( array $settings, string $status, string $refund_method = 'payment_method' ): void {
 		$status     = sanitize_key( $status );
 		$refund_method = sanitize_key( $refund_method );
-		$guidelines = array();
+		$guidelines = '';
 		$message    = '';
 
 		if ( 'approved' === $status ) {
 			$message    = __( 'Your return request has been approved. Please proceed with shipping the return item(s) back to us.', 'windcodex-returndesk' );
-			$guidelines = $this->parse_multiline_options( (string) ( $settings['return_guidelines'] ?? '' ), true );
+			$guidelines = (string) ( $settings['return_guidelines'] ?? '' );
 		} elseif ( 'pending' === $status ) {
 			$message = __( 'Your return request is submitted and currently under review. We will notify you once it is processed.', 'windcodex-returndesk' );
 		} elseif ( 'rejected' === $status ) {
@@ -2051,12 +2049,10 @@ private function create_request_from_order_items( WC_Order $order, array $items,
 			<?php if ( 'approved' === $status ) : ?>
 				<p class="returndesk-request-status-text"><?php echo esc_html( sprintf( /* translators: %s: refund method label */ __( 'Refund method: %s.', 'windcodex-returndesk' ), $this->get_refund_method_label( $refund_method ) ) ); ?></p>
 			<?php endif; ?>
-			<?php if ( ! empty( $guidelines ) ) : ?>
-				<ul class="returndesk-request-status-steps">
-					<?php foreach ( $guidelines as $line ) : ?>
-						<li><?php echo esc_html( $line ); ?></li>
-					<?php endforeach; ?>
-				</ul>
+			<?php if ( '' !== trim( wp_strip_all_tags( $guidelines ) ) ) : ?>
+				<div class="returndesk-request-status-steps">
+					<?php echo wp_kses_post( wpautop( $guidelines ) ); ?>
+				</div>
 			<?php endif; ?>
 		</div>
 		<?php

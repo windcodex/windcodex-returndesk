@@ -45,14 +45,27 @@
 	margin-bottom: 6px;
 }
 
-.returndesk-note-list {
-	margin: 8px 0 0 18px;
-	padding: 0;
+.returndesk-note-content {
+	margin-top: 8px;
 	color: var(--returndesk-muted);
 }
 
-.returndesk-note-list li {
-	margin: 2px 0;
+.returndesk-note-content p {
+	margin: 4px 0;
+}
+
+.returndesk-note-content p:first-child {
+	margin-top: 0;
+}
+
+.returndesk-note-content p:last-child {
+	margin-bottom: 0;
+}
+
+.returndesk-note-content ul,
+.returndesk-note-content ol {
+	margin: 4px 0 4px 18px;
+	padding: 0;
 }
 
 .returndesk-terms {
@@ -294,9 +307,19 @@
 }
 
 .returndesk-request-status-steps {
-	margin: 8px 0 0 18px;
+	margin: 8px 0 0;
 	color: var(--returndesk-text);
 	font-size: 13px;
+}
+
+.returndesk-request-status-steps p {
+	margin: 4px 0;
+}
+
+.returndesk-request-status-steps ul,
+.returndesk-request-status-steps ol {
+	margin: 4px 0 4px 18px;
+	padding: 0;
 }
 
 .returndesk-request-status-box.is-approved {
