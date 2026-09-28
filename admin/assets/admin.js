@@ -981,4 +981,12 @@
 	$helpDropdown.on( 'click', function ( e ) {
 		e.stopPropagation();
 	} );
+
+	// Escape closes the menu and hands focus back to the Help button.
+	$( document ).on( 'keydown', function ( e ) {
+		if ( 'Escape' === e.key && $helpDropdown.attr( 'hidden' ) === undefined ) {
+			$helpDropdown.attr( 'hidden', '' );
+			$helpBtn.removeClass( 'is-open' ).attr( 'aria-expanded', 'false' ).trigger( 'focus' );
+		}
+	} );
 })(jQuery);

@@ -1019,7 +1019,8 @@ class ReturnDesk_Admin {
 	public function plugin_action_links( array $links ): array {
 		array_unshift(
 			$links,
-			'<a href="' . esc_url( admin_url( 'admin.php?page=' . self::ADMIN_PAGE_SLUG ) ) . '">' . esc_html__( 'Settings', 'windcodex-returndesk' ) . '</a>'
+			'<a href="' . esc_url( admin_url( 'admin.php?page=' . self::ADMIN_PAGE_SLUG ) ) . '">' . esc_html__( 'Settings', 'windcodex-returndesk' ) . '</a>',
+			'<a href="' . esc_url( 'https://docs.windcodex.com/docs/returndesk' ) . '" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Docs', 'windcodex-returndesk' ) . '</a>'
 		);
 		return $links;
 	}
