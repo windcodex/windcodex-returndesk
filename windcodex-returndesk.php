@@ -2,6 +2,7 @@
 /**
  * @wordpress-plugin
  * Plugin Name:       WindCodex ReturnDesk
+ * Plugin URI:        https://windcodex.com/product/woocommerce-returns-plugin/
  * Tagline:           Returns for WooCommerce
  * Description:       Add a self-service returns workflow to WooCommerce with eligibility rules, a customer portal, and request management.
  * Version:           1.0.4
